@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Scanner;
 
 public class Decoding {
@@ -32,7 +31,7 @@ public class Decoding {
 
     }
 
-    public String cipher() {
+    public String decodcipher() {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 

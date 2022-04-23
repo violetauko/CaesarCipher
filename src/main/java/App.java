@@ -9,7 +9,7 @@ public class App {
 
         decoding.userInput();
 
-        System.out.println(decoding.cipher());
+        System.out.println(decoding.decodcipher());
 
 //
     }
