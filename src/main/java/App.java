@@ -6,6 +6,7 @@ public class App {
         encoding.userInput();
         System.out.println("your encrypted text is:" + encoding.cipher());
 
+
         decoding.userInput();
 
         System.out.println(decoding.cipher());

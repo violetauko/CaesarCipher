@@ -34,7 +34,7 @@ public class Encoding {
     public String cipher() {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-
+      //looping through the characters of originalText
         for (int i = 0; i < this.getOriginalText().length(); i++) {
             int currentIndex = alphabet.indexOf(this.getOriginalText().charAt(i));
             int newIndex = (currentIndex + this.key) % 26;
