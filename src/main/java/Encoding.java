@@ -36,8 +36,9 @@ public class Encoding {
 
       //looping through the characters of originalText
         for (int i = 0; i < this.getOriginalText().length(); i++) {
+            //getting index of  each alphabet char
             int currentIndex = alphabet.indexOf(this.getOriginalText().charAt(i));
-            int newIndex = (currentIndex + this.key) % 26;
+            int newIndex = (currentIndex + this.key) % 26;//%26 if key is not within margin of 26
             char cipherLetter = alphabet.charAt(newIndex);
             cipherText = cipherText + cipherLetter;
 
