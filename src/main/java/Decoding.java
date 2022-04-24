@@ -33,7 +33,7 @@ public class Decoding {
 
     public String decodcipher() {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+       //split words using space
         for (String word:this.getCipherText().split(" ")) {
             for (int i = 0; i <word.length(); i++) {
                 int currentIndex = alphabet.indexOf(word.charAt(i));
