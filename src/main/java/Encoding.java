@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Encoding {
     private String originalText = "";
     public Integer key;
-    public String cipherText = "";
+    private String cipherText = "";
 
     public void setOriginalText(String originalText) {
         this.originalText = originalText.toUpperCase();
