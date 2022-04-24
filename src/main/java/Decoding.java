@@ -44,6 +44,7 @@ public class Decoding {
                 char textLetter = alphabet.charAt(newIndex);
                 originalText = originalText + textLetter;
             }
+            //put spaces after each encoded word
             originalText = originalText + " ";
         }
         return originalText;
