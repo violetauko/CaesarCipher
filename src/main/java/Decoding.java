@@ -40,7 +40,7 @@ public class Decoding {
                 //getting index of  each alphabet char
                 int currentIndex = alphabet.indexOf(word.charAt(i));
                 int newIndex = (currentIndex+this.key);
-                newIndex=newIndex>=26?newIndex%26:newIndex;
+                newIndex=newIndex>=26?newIndex%26:newIndex;//%26 if key is not within margin of 26
                 char textLetter = alphabet.charAt(newIndex);
                 originalText = originalText + textLetter;
             }
