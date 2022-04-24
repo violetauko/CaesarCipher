@@ -5,7 +5,7 @@ public class Decoding {
 
     private String cipherText="";
     public Integer key;
-    public String originalText="" ;
+    private String originalText="" ;
 
     public void setCipherText(String cipherText) {
         this.cipherText = cipherText.toUpperCase();
