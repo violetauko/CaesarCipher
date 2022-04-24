@@ -49,28 +49,10 @@ public class Encoding {
             cipherText=cipherText+" ";
         }
 
-
             return cipherText;
-
-
 
     }
 }
-
-
-
-
-
-//            char myLetter = this.getOriginalText().charAt(i);
-//            Integer currentIndex = myList.indexOf(Character.toString(myLetter));
-//            int key =currentIndex + this.key;
-//            String cipherLetter = myList.get(key);
-//            this.cipherText = this.cipherText + ""+ cipherLetter;
-//
-//        }
-//        return this.cipherText;
-
-
 
 
 
