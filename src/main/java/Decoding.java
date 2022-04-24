@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class Decoding {
+
     private String cipherText="";
     public Integer key;
     public String originalText="" ;
@@ -16,6 +17,7 @@ public class Decoding {
 
     //getting user input
     public void userInput() {
+
         try {
             System.out.println("Enter a cipher text:");
             Scanner scanner = new Scanner(System.in);
