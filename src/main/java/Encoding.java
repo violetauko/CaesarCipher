@@ -33,15 +33,23 @@ public class Encoding {
 
     public String cipher() {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            //looping through the characters of originalText
-            for (int i = 0; i < this.getOriginalText().length(); i++) {
+        //split words using space
+        for (String word:this.getOriginalText().split(" ")) {
+            System.out.println(word);
+            //encode each letter of a word
+            for (int i = 0; i < word.length(); i++) {
                 //getting index of  each alphabet char
-                int currentIndex = alphabet.indexOf(this.getOriginalText().charAt(i));
-                int newIndex = (currentIndex + this.key) % 26;//%26 if key is not within margin of 26
+                int currentIndex = alphabet.indexOf(word.charAt(i));
+                int newIndex = (currentIndex - this.key);
+                newIndex = newIndex<0?newIndex+26:newIndex; //%26 if key is not within margin of 26
                 char cipherLetter = alphabet.charAt(newIndex);
                 cipherText = cipherText + cipherLetter;
 
             }
+            //put spaces after each encoded word
+            cipherText=cipherText+" ";
+        }
+
 
             return cipherText;
 
