@@ -27,6 +27,9 @@ class DecodingTest {
 
     @Test
     void getCipherText() {
+        String cipherText="abc";
+        decoding.setCipherText(cipherText);
+        assertEquals("ABC",decoding.getCipherText());
     }
 
     @Test
