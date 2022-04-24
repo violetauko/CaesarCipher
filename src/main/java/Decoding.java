@@ -37,6 +37,7 @@ public class Decoding {
         for (String word:this.getCipherText().split(" ")) {
             //decode each letter of a word
             for (int i = 0; i <word.length(); i++) {
+                //getting index of  each alphabet char
                 int currentIndex = alphabet.indexOf(word.charAt(i));
                 int newIndex = (currentIndex+this.key);
                 newIndex=newIndex>=26?newIndex%26:newIndex;
