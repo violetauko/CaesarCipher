@@ -35,6 +35,7 @@ public class Decoding {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
        //split words using space
         for (String word:this.getCipherText().split(" ")) {
+            //decode each letter of a word
             for (int i = 0; i <word.length(); i++) {
                 int currentIndex = alphabet.indexOf(word.charAt(i));
                 int newIndex = (currentIndex+this.key);
