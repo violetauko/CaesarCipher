@@ -35,7 +35,6 @@ public class Encoding {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         //split words using space
         for (String word:this.getOriginalText().split(" ")) {
-            System.out.println(word);
             //encode each letter of a word
             for (int i = 0; i < word.length(); i++) {
                 //getting index of  each alphabet char
